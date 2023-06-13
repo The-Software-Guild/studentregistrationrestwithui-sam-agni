@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student System</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <script src="get_students.js"></script>
+</head>
+<body>
+    <nav class="navbar bg-body-secondary d-flex justify-content-evenly">
+	    <span class="navbar-brand mb-0 h1">Student System</span>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	</nav>
+	<div class="collapse bg-body-tertiary" id="navbarToggleExternalContent">
+	  <div class="row">
+      <div class="col-md-4"></div>
+	  <div class="col-md-4 m-1">
+	    <ul class="navbar-nav">
+		    <li class="nav-item">
+	   			<a class="nav-link" href="add_student.html">Add Student</a>
+	   		</li>
+	   		<li class="nav-item">
+	   			<a class="nav-link active" href="get_students.html">Show All Students</a>
+		    </li>
+		    <li class="nav-item">
+	   			<a class="nav-link" href="search_students.html">Search Students</a>
+		    </li>
+	    </ul>
+	  </div>
+	  <div class="col-md-4"></div>
+	  </div>
+	</div>
+	<div class="row">
+    <div class="col-md-4"></div>
+	<div class="col-md-4 m-1">
+      <h5 class="my-2">Current students</h5>
+         <div id="allstudents" class="mx-1"></div>
+    </div>
+    </div>
+  
+    <div class="col-md-4"></div>
+</body>
+</html>
